@@ -20,7 +20,9 @@
     "dotenv": "^8.2.0",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
-    "koa-router": "^10.0.0"
+    "koa-router": "^10.0.0",
+    "nodemon": "^2.0.6",
+    "pipedrive": "^10.4.3"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
