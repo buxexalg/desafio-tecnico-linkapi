@@ -1,0 +1,30 @@
+{
+  "name": "desafio-tecnico-linkapi",
+  "version": "1.0.0",
+  "description": "Repositório referente ao desafio técnico da LinkAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buxexalg/desafio-tecnico-linkapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buxexalg/desafio-tecnico-linkapi/issues"
+  },
+  "homepage": "https://github.com/buxexalg/desafio-tecnico-linkapi#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
+}
