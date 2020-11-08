@@ -11,8 +11,8 @@ const generateXML = async (WonDeals) => {
 			cliente: {
 				nome: WonDeals.org_name,
 				tipoPessoa: 'J',
-				fone: WonDeals.person_id.phone.value,
-				email: WonDeals.person_id.email.value,
+				fone: WonDeals.person_id.phone[0].value,
+				email: WonDeals.person_id.email[0].value,
 			},
 			itens: {},
 			parcelas: {
