@@ -1,4 +1,5 @@
 const pipedrive = require('pipedrive');
+const { checkTokenExpiry } = require('pipedrive/lib/OAuthManager');
 
 pipedrive.Configuration.apiToken = process.env.PIP_TOKEN;
 
@@ -13,7 +14,7 @@ const getProductByDealID = async (id) => {
 	return products.data;
 };
 
-const getWonDealsWithProducts = async () => {
+const getWonDealsWithProducts = async (ctx) => {
 	const input = [];
 	input['status'] = 'won';
 	const deals = await pipedrive.DealsController.getAllDeals(input);
@@ -21,6 +22,7 @@ const getWonDealsWithProducts = async () => {
 	for (const elemento of deals.data) {
 		elemento['products'] = await getProductByDealID(elemento.id);
 	}
+	ctx.body = deals.data;
 	return deals.data;
 };
 

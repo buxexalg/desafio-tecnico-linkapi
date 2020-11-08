@@ -2,8 +2,9 @@ const Pipedrive = require('../controllers/pipedrive');
 const GenerateXML = require('../utils/generateXML');
 const axios = require('axios').default;
 
-const exportOrder = async () => {
-	const Deals = await Pipedrive.getWonDealsWithProducts();
+const exportOrder = async (ctx) => {
+	const Deals = await Pipedrive.getWonDealsWithProducts(ctx);
+	ctx.body = '';
 
 	for (deal of Deals) {
 		const xml = await GenerateXML.generateXML(deal);
@@ -33,12 +34,10 @@ const getOrders = async (ctx) => {
 		method: 'GET',
 		url: 'https://bling.com.br/Api/v2/pedidos/json',
 		params: {
-			apikey:
-			process.env.BLING_TOKEN,
+			apikey: process.env.BLING_TOKEN,
 		},
 		headers: {
-			apikey:
-			process.env.BLING_TOKEN,
+			apikey: process.env.BLING_TOKEN,
 		},
 	};
 
@@ -46,6 +45,7 @@ const getOrders = async (ctx) => {
 		.request(options)
 		.then(function (response) {
 			ctx.body = response.data;
+			return response.data;
 		})
 		.catch(function (error) {
 			console.error(error);
