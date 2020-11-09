@@ -1,8 +1,8 @@
-# Teste técnico LinkAPI- Back-end - Cubos
+# Teste técnico LinkAPI - Back-end - Cubos
 
 ## Integração de APIs.
 
-Repositório referente a uma API REST que tem como função administrar a integração entre a API do Pipedrive e Bling. Os endpoints são responsáveis por identificar propostas marcadas como 'Ganhas' no pipedrive, exportá-las como pedidos de venda para o Bling e salvar o registro em um banco de dados NoSQL MongoDB. Esta API faz parte do processo seletivo no cargo de Back-end da LinkAPI.
+Repositório referente a uma `API REST` que tem como função administrar a integração entre a API do [Pipedrive](https://www.pipedrive.com/pt) e [Bling](https://www.bling.com.br/). Os endpoints são responsáveis por identificar propostas marcadas como 'Ganhas' no Pipedrive, exportá-las como pedidos de venda para o Bling e salvar o registro em um banco de dados NoSQL MongoDB. Esta API faz parte do processo seletivo no cargo de Back-end da LinkAPI.
 
 # Conteúdos
 
