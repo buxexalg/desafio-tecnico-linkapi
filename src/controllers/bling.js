@@ -1,7 +1,11 @@
 const Pipedrive = require('../controllers/pipedrive');
 const GenerateXML = require('../utils/generateXML');
 const axios = require('axios').default;
+const { sucessoRequisicao } = require('./response');
 
+/**
+ * Função que exporta para o Bling as oportunidades ganhas do pipedrive em conjunto com os seus produtos.
+ */
 const exportOrder = async (ctx) => {
 	const Deals = await Pipedrive.getWonDealsWithProducts(ctx);
 	ctx.body = '';
@@ -29,6 +33,9 @@ const exportOrder = async (ctx) => {
 	}
 };
 
+/**
+ * Função que retorna todos os pedidos registrados no Bling.
+ */
 const getOrders = async (ctx) => {
 	const options = {
 		method: 'GET',
@@ -44,7 +51,7 @@ const getOrders = async (ctx) => {
 	return axios
 		.request(options)
 		.then(function (response) {
-			ctx.body = response.data;
+			sucessoRequisicao(ctx, response.data);
 			return response.data;
 		})
 		.catch(function (error) {
