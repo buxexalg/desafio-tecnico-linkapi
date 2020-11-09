@@ -1,6 +1,9 @@
 const { create } = require('xmlbuilder2');
 const { version } = require('prettier');
 
+/**
+ * A função recebe um objeto com todas as oportunidades ganhas do Pipedrive e o transforma em um XML para ser enviado como requisição para o Bling.
+ */
 const generateXML = async (WonDeals) => {
 	const products = [];
 	const date = WonDeals.won_time.split(' ')[0].split('-');
