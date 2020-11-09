@@ -1,7 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 
-const uri =
-	'mongodb+srv://admin:102030@cluster0.zgofa.mongodb.net/Linkapi?retryWrites=true&w=majority';
+const uri = process.env.URI_MONGODB;
 
 const client = new MongoClient(uri, {
 	useNewUrlParser: true,
