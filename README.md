@@ -1,4 +1,4 @@
-# Teste técnico LinkAPI - Back-end - Cubos
+# Teste técnico LinkAPI - Back-end - LinkAPI
 
 ## Integração de APIs.
 
