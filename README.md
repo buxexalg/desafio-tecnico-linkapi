@@ -1,7 +1,3 @@
-# desafio-tecnico-linkapi
-
-Repositório referente ao desafio técnico da LinkAPI
-
 # Teste técnico LinkAPI- Back-end - Cubos
 
 ## Integração de APIs.
@@ -93,8 +89,8 @@ Após instalar o Node, execute `$ npm install` para instalar as seguintes depend
 -   [Koa-router](https://www.npmjs.com/package/koa-router)
 -   [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 -   [Dotenv](https://www.npmjs.com/package/dotenv)
--	[MongoDB](https://www.npmjs.com/package/mongodb)
--	[Pipedrive](https://www.npmjs.com/package/pipedrive)
--	[Xmlbuilder2](https://www.npmjs.com/package/xmlbuilder2)
--	[Eslint](https://www.npmjs.com/package/eslint)
--	[Prettier](https://www.npmjs.com/package/prettier)
+-   [MongoDB](https://www.npmjs.com/package/mongodb)
+-   [Pipedrive](https://www.npmjs.com/package/pipedrive)
+-   [Xmlbuilder2](https://www.npmjs.com/package/xmlbuilder2)
+-   [Eslint](https://www.npmjs.com/package/eslint)
+-   [Prettier](https://www.npmjs.com/package/prettier)
